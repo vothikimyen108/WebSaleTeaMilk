@@ -1,0 +1,243 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>YU FOOD</title>
+<link href="css/css_1.css" rel="stylesheet">
+<link href="fontawesome-free-5.9.0-web/css/all.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Baloo&display=swap" rel="stylesheet">
+<link href="anh/icon/logo_vang.ico" rel="shortcut icon">
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
+<script>
+    var images =[ "anh/anh2.jpg" , "anh/anh3.jpg" , "anh/anh4.jpg" ,  "anh/anh5.jpg" ];
+    var num = 0;
+    function next() {
+        var slider = document.getElementById("slider");
+        num++;
+        if(num >= images.length) {
+            num = 0;
+        }
+        slider.src = images[num];
+    }
+    function prev() {
+        var slider = document.getElementById("slider");
+        num--;
+        if(num < 0) {
+            num = images.length-1;
+        }
+        slider.src = images[num];
+    }
+	function hien()
+	{
+		   document.getElementById("myDropdown").classList.toggle("show");
+	}
+	setInterval(function(){
+		next();
+	},1600);
+	</script>
+<link rel="stylesheet" href="https://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css">
+<script src="https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js"></script>
+<script>
+   new WOW().init();
+</script>
+<script>
+    $(document).ready(function(){
+        $("img.di").hide();
+		$(window).scroll(function(){
+			if($("html,body").scrollTop()>60)
+				$("img.di").show("fast");
+			else
+				$("img.di").hide("fast");
+		})
+		$("img.di").click(function()
+				 {
+					$("html,body").animate({scrollTop:0},200);
+				 })
+	})
+</script>
+</head>
+<body>
+	<div>
+		<div class="header">
+			<div class="header-left">
+			  <img src="anh/logo_vang.png" alt="OU" id="veday">
+			</div>
+			<div class="menu">
+				<ul class="nav-left">
+					<li><a href="./index.html">Trang chủ</a></li>
+					<li><a href="./gioithieu.html">Giới Thiệu</a></li>
+					<li class="submenu"><a href="./sanpham.html">Sản Phẩm</a>
+						<ul class="subcontent">
+						<li><a href="#">đồ ăn</a></li>
+						<li><a href="#">đồ uống</a></li>
+					 	</ul>
+					</li>
+					<li><a href="./blog.html">Blog</a></li>
+				</ul>
+				<ul class="nav-right">
+					<li>
+						<a href="#" id="search" onClick="hien()"><i class="fa fa-search"></i></a>
+					</li>
+					<li><a href="#"><i class="fa fa-cart-arrow-down"></i></a></li>
+				</ul>
+				<div id="myDropdown" class="dropdown-content"><input type="text"  placeholder="Trà sữa, pizza..."></div>
+			</div>
+		</div>
+		<div class="quangcao">
+			<img id="slider" src="anh/anh4.jpg" alt="anh">
+			<div class="ads">
+				<div class="ads-left" onClick="next()"><img src="anh/back.png" alt="anh"></div>
+				<div class="ads-right" onClick="prev()"><img src="anh/right-arrow.png" alt="anh"></div>
+			</div>
+		</div>
+		<div class="body">
+			<div class="sanphamnoi">
+				<h2>Menu</h2>
+				<h1>Sản phẩm nổi bật</h1>
+				<img src="anh/phanchan/chan1.png" alt="anh">
+				<div class="sanpham">
+				<div class="wow fadeInUp" data-wow-duration="2s" data-wow-offset="100">
+					<img src="anh/sanpham/banh/banhmibobbq.png" alt="anh">
+					<div class="info">
+						<div class="text"><h3>Bánh mì Bò</h3></div>
+						<div class="money">60.000đ</div>
+						<div class="team"><a href="#">Mua ngay</a><a href="#">Tìm hiểu thêm</a></div>
+					</div>
+				</div>
+				<div class="wow fadeInUp" data-wow-duration="2s" data-wow-offset="100" >
+					<img src="anh/sanpham/Pizza/Pizza Meat lovers.png" alt="anh">
+					<div class="info">
+						<div class="text"><h3>pizzA xúc xích</h3></div>
+						<div class="money">30.000đ</div>
+						<div class="team"><a href="#">Mua ngay</a><a href="#">Tìm hiểu thêm</a></div>
+					</div>
+				</div>
+				<div class="wow fadeInUp" data-wow-duration="2s" data-wow-offset="100">
+					<img src="anh/sanpham/che/chè thập cẩm.png" alt="anh">
+					<div class="info">
+						<div class="text"><h3>Chè yu food</h3></div>
+						<div class="money">80.000đ</div>
+						<div class="team"><a href="#">Mua ngay</a><a href="#">Tìm hiểu thêm</a></div>
+					</div>
+				</div>
+				<div class="wow fadeInUp" data-wow-duration="2s"  data-wow-offset="100">
+					<img src="anh/sanpham/banh/banh_gao_ruou.png" alt="anh">
+					<div class="info">
+						<div class="text"><h3>bánh gạo rượu</h3></div>
+						<div class="money">50.000đ</div>
+						<div class="team"><a href="#">Mua ngay</a><a href="#">Tìm hiểu thêm</a></div>
+					</div>
+				</div>
+				<div class="wow fadeInUp" data-wow-duration="2s"  data-wow-offset="120">
+					<img src="anh/sanpham/Trà sữa/trà sữa bánh pudding.jpeg" alt="anh">
+					<div class="info">
+						<div class="text"><h3>Trà sữa bánh pudding</h3></div>
+						<div class="money">50.000đ</div>
+						<div class="team"><a href="#">Mua ngay</a><a href="#">Tìm hiểu thêm</a></div>
+					</div>
+				</div>
+				<div class="wow fadeInUp" data-wow-duration="2s" data-wow-offset="120">
+					<img src="anh/sanpham/Trà sữa/sữa-tươi-trân-châu-đường-đen.png" alt="anh">
+					<div class="info">
+						<div class="text"><h3>sữa tươi trân châu</h3></div>
+						<div class="money">50.000đ</div>
+						<div class="team"><a href="#">Mua ngay</a><a href="#">Tìm hiểu thêm</a></div>
+					</div>
+				</div>
+				<div class="wow fadeInUp" data-wow-duration="2s" data-wow-offset="120">
+					<img src="anh/sanpham/Trà trái cây/tra-dau-tam-kem-pha-le-tuyet_72bba9afee98477684fd904da6fd1c2a.png" alt="anh">
+					<div class="info">
+						<div class="text"><h3>dâu tằm pha lê tuyết</h3></div>
+						<div class="money">50.000đ</div>
+						<div class="team"><a href="#">Mua ngay</a><a href="#">Tìm hiểu thêm</a></div>
+					</div>
+				</div>
+				<div class="wow fadeInUp" data-wow-duration="2s" data-wow-offset="120">
+					<img src="anh/sanpham/Trà sữa/TRA-SỮA-TRÂN-châu-hoàng-gia.png" alt="anh">
+					<div class="info">
+						<div class="text"><h3>Trà sữa hoàng gia</h3></div>
+						<div class="money">50.000đ</div>
+						<div class="team"><a href="#">Mua ngay</a><a href="#">Tìm hiểu thêm</a></div>
+					</div>
+			   </div>
+			 </div>
+				<a href="file2_html.html" title class="di">Xem Tất cả</a>
+			</div>
+			<div class="tintuc">
+				<div>
+					<h2>YU FOOD Story</h2>
+					<h1>Về chúng tôi</h1>
+					<p>Bên cạnh niềm tự hào về những món ăn ngon – sạch – tươi, chúng tôi luôn tự tin mang đến khách hàng những trải nghiệm tốt nhất về dịch vụ và không gian</p>
+					<a href="File1_html.html" title="yufood">thêm</a>
+				</div>
+			</div>
+			<div class="nq">
+				<div class="nq-left">
+					<img src="anh/logo_den.png" alt="anh">
+				</div>
+				<div class="nq-right">
+					<h2>YU FOOD Franchise</h2>
+					<h1>Nhượng Quyền</h1>
+					<p>Gia nhập đế chế 300 TRIỆU USD. Nếu bạn bắt đầu kinh doanh khởi nghiệp ẩm thực, hoặc muốn đầu tư vào lĩnh vực này, thương hiệu YU Food chắc chắn sẽ là một lựa chọn đáng cân nhắc cho bạn.</p>
+					<a href="web5.html" title="yufood">thêm</a>
+				</div>
+			</div>
+			<div><h2> YU FOOD STORE</h2>
+			<h1>Địa chỉ yu food</h1>
+			<img src="anh/phanchan/chan1.png" alt="anh"></div>
+			<div class="map">
+			<div class="map-child" id="diachi">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.935728531272!2d106.67562481474924!3d10.816230592294513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528e195f816b7%3A0xfb5c0101490d8870!2zMzcxIE5ndXnhu4VuIEtp4buHbSwgUGjGsOG7nW5nIDMsIEfDsiBW4bqlcCwgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1565344428425!5m2!1svi!2s" width="100%" height="400px" frameborder="0" style="border:0" allowfullscreen id="vemap"></iframe>
+			</div>
+			</div>
+		</div>
+		<div class="goto">
+			<div ><img src="anh/1730464-call-telephone-icon-telephone-phone-telephone-call-png-512_512.png" alt="anh"></div>
+			<div ><img src="anh/icon-mess-blue.png" alt="anh"></div>
+			<div ><img src="anh/icon-2.1.png" alt="anh"></div>
+			<div><img class="di" src="anh/scroll-up-icon-10.jpg" alt="anh"></div>
+		</div>
+	<div class="footer">
+		<div class="footer1">
+			<div class="col">
+				<img src="anh/logo_vang.png" alt="anh">
+			</div>
+ 			 <div class="col1">
+				   <ul class="anv"><h4>Công Ty YU FOOD Việt Nam</h4>
+					 <li><a href="#" class="fa fa-place-of-worship"><span>788 Nguyễn Kiệm, Phường 3, Gò vấp, TP.HCM</span></a></li>
+					 <li><a href="#" class="fa fa-phone-alt"><span>0945320117</span></a></li>
+					 <li><a href="#" class="fa fa-mail-bulk"><span>yofood&#64;gmail.com</span></a></li>
+				 </ul>
+				 <div class="anv">
+					 <a href="https://www.youtube.com/" target="_blank" class="fab fa-youtube"></a>
+					 <a href="https://www.facebook.com/vtkyn/" target="_blank" class="fab fa-facebook"></a>
+					 <a href="https://www.instagram.com/chuheocon25/" class="fab fa-instagram" target="_blank"></a>
+					 <a href="https://twitter.com/?lang=vi" class="fab fa-twitter" target="_blank"></a>
+					 <a href="https://www.google.com.vn/?hl=vi" class="fab fa-google" target="_blank"></a>
+				 </div>
+			 </div>
+			 <div class="col2_menu">
+				<ul>
+					<h4>Về chúng tôi</h4>
+					<li><a href="./index.html">Giới thiệu về YUFOOD</a></li>
+					<li><a href="./nhuonquyen.html">Nhượng quyền</a></li>
+					<li><a href="#diachi">Cửa hàng</a></li>
+					<li><a href="#">Liên hệ</a></li>
+				</ul>
+			 </div>
+			 <div class="col3">
+				  <ul> <h4>Chính sách</h4>
+					 <li><a href="#">Quy trình đồ uống</a></li>
+					 <li><a href="#">Hướng dẫn thanh toán</a></li>
+					 <li><a href="#">Bảo mật thông tin</a></li>
+					 <li><a href="#">Giải quyết khiếu nại</a></li>
+				 </ul>
+			 </div>
+	   </div>
+		<div class="footer2">
+				Copyrights &copy; 2019 by YU FOOD. All rights reserved
+			</div>
+		</div>
+	</div>
+</body>
+</html>

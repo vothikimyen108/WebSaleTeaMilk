@@ -1,0 +1,86 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	color:#FFF;
+}
+.ads {
+	overflow:hidden;
+}
+.ad{
+	background-color: #066;
+	padding: 0px;
+	margin: 0px;
+}
+div.menu {
+	background-color:#066;
+	display: block;
+	font-size: 20px;
+	top: 20px;
+	right: 15px;
+	padding: 5px;
+}
+.menu.ads > ul:first-child{
+	float:right;
+}
+.menu.ads > ul:last-child{
+	float:left;
+}
+ul {
+	list-style-type:none;
+	padding:0px;
+	margin:0px;
+}
+ul > li {
+	float:left;
+}
+.ads > li > a {
+	display:block;
+	padding:15px 20px;
+	text-decoration:none;
+	color:#FFF;
+}
+
+.ads > li > a:hover {
+	background-color:#009;
+}
+/* CSS HEADER */
+.header.ads{
+	width: 25%;
+	height: 10%;
+	float:left;
+	top:0px;
+	vertical-align: middle;
+}
+/* CSS BODY */
+div.header.ads > img{
+	width: 40%;
+	height: auto;
+	padding: 0px;
+}
+div.head{
+	font-size: 30px;
+    letter-spacing: 1.4px;
+    color: #723C3D;
+	margin: 5px auto;
+	padding: 20px 20px 0;
+}
+#slider{
+	text-align: center;
+	margin: 0px auto;
+	position: relative;
+}
+.slide{
+	text-align: center;
+}
+#pre{
+	text-transform: uppercase;
+	top: 200px;
+	left:330px;
+	position: absolute;
+}
+#back{
+	text-transform: uppercase;
+	top: 200px;
+	right:330px;
+	position: absolute;
+}

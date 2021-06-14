@@ -1,0 +1,193 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>YU FOOD Nhượng quyền</title>
+<link href="css/css_5.css" rel="stylesheet">
+<link href="fontawesome-free-5.9.0-web/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Baloo&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css">
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
+<script>
+	function hien()
+	{
+		document.getElementById("myDropdown").classList.toggle("show");
+	}
+  $(document).ready(function(){
+	$("img.di").hide();
+	$(window).scroll(function(){
+		if($("html,body").scrollTop()>60)
+			$("img.di").show("fast");
+		else
+			$("img.di").hide("fast");
+	})
+	$("img.di").click(function()
+			 {
+				$("html,body").animate({scrollTop:0},200);
+			 })
+})
+</script>
+<script src="https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js"></script>
+<script>
+	new WOW().init();
+</script>
+</head>
+<body>
+	<div>
+		<div class="header">
+			<div class="header-left">
+			  <img src="anh/logo_vang.png" alt="OU" id="veday">
+			</div>
+			<div class="menu">
+				<ul class="nav-left">
+					<li><a href="./index.html">Trang chủ</a></li>
+					<li><a href="./gioithieu.html">Giới Thiệu</a></li>
+					<li class="submenu"><a href="./sanpham.html">Sản Phẩm</a>
+						<ul class="subcontent">
+						<li><a href="#">đồ ăn</a></li>
+						<li><a href="#">đồ uống</a></li>
+					 	</ul>
+					</li>
+					<li><a href="./blog.html">Blog</a></li>
+				</ul>
+				<ul class="nav-right">
+					<li>
+						<a href="#" id="search" onClick="hien()"><i class="fa fa-search"></i></a>
+					</li>
+					<li><a href="#"><i class="fa fa-cart-arrow-down"></i></a></li>
+				</ul>
+				<div id="myDropdown" class="dropdown-content"><input type="text"  placeholder="Trà sữa, pizza..."></div>
+			</div>
+		</div>
+		<div class="body">
+			<form action="web1.html">
+			<div class="form">
+				<div>
+					<h1>Đăng kí Nhượng quyền YU FOOD</h1>
+					<div><input type="text" placeholder="Họ và tên" required></div>
+					<div><input type="email" placeholder="e-mail" required></div>
+					<div><input type="text" placeholder="điện thoại" required></div>
+					<div><input type="text" placeholder="địa chỉ khu vực mở cửa hàng" required></div>
+					<div><select>
+                       <option>Khoảng vốn đầu tư</option>
+                       <option>500-700 Triệu</option>
+                       <option>700-Tỷ</option>
+						<option>Trên 1 tỷ</option>
+                   		</select>
+					</div>
+					<div><select>
+                       <option>Tỉnh thành mở cửa hàng</option>
+							<option>An Giang</option>
+						<option>Bà Rịa - Vũng Tàu</option>
+						<option>Bắc Giang</option>
+						<option>Bắc Kạn</option>
+						<option>Bạc Liêu</option>
+						<option>Bắc Ninh</option>
+						<option>Bến Tre</option>
+						<option>Bình Định</option>
+						<option>Bình Dương</option>
+						<option>Bình Phước</option>
+						<option>Bình Thuận</option>
+						<option>Cà Mau</option>
+						<option>Cao Bằng</option>
+						<option>Đắk Lắk</option>
+						<option>Đắk Nông</option>
+						<option>Điện Biên</option>
+						<option>Đồng Nai</option>
+						<option>Đồng Tháp</option>
+						<option>Gia Lai</option>
+						<option>Hà Giang</option>
+						<option>Hà Nam</option>
+						<option>Hà Tĩnh</option>
+						<option>Hậu Giang</option>
+						<option>Hải Dương</option>
+						<option>Hòa Bình</option>
+						<option></option>
+						<option>Hưng Yên</option>
+						<option>Khánh Hòa</option>
+						<option>Kiên Giang</option>
+						<option>Kon Tum</option>
+						<option>Lai Châu</option>
+						<option>Lâm Đồng</option>
+						<option>Lạng Sơn</option>
+        				<option>Lào Cai</option>
+						<option>Long An</option>
+						<option>Nam Định</option>
+						<option>Nghệ An</option>
+						<option>Ninh Bình</option>
+						<option>Ninh Thuận</option>
+						<option>Phú Thọ</option>
+						<option>Quảng Bình</option>
+						<option>Quảng Nam</option>
+						<option>Quảng Ngãi</option>
+						<option>Quảng Ninh</option>
+						<option>Quảng Trị</option>
+						<option>Sóc Trăng</option>
+						<option>Sơn La</option>
+						<option>Tây Ninh</option>
+						<option>Thái Bình</option>
+						<option>Thái Nguyên</option>
+						<option>Thanh Hóa</option>
+						<option>Thừa Thiên Huế</option>
+						<option>Tiền Giang</option>
+						<option>Trà Vinh</option>
+						<option>Tuyên Quang</option>
+						<option>Vĩnh Long</option>
+						<option>Vĩnh Phúc</option>
+						<option>Yên Bái</option>
+						<option>Phú Yên</option>
+						<option>Cần Thơ</option>
+						<option>Đà Nẵng</option>
+						<option>Hải Phòng</option>
+						<option>Hà Nội</option>
+						<option>TP HCM</option>
+                   		</select>
+					</div>
+					<div><input type="submit" value="Đăng Kí" id="gui"></div>
+				</div>
+			</div></form>
+		</div>
+	<div class="footer">
+		<div class="footer1">
+			<div class="col">
+				<img src="anh/logo_vang.png" alt="anh">
+			</div>
+ 			 <div class="col1">
+				   <ul class="anv"><h4>Công Ty YU FOOD Việt Nam</h4>
+					 <li><a href="#" class="fa fa-place-of-worship"><span>788 Nguyễn Kiệm, Phường 3, Gò vấp, TP.HCM</span></a></li>
+					 <li><a href="#" class="fa fa-phone-alt"><span>0945320117</span></a></li>
+					 <li><a href="#" class="fa fa-mail-bulk"><span>yofood&#64;gmail.com</span></a></li>
+				 </ul>
+				 <div class="anv">
+					 <a href="https://www.youtube.com/" target="_blank" class="fab fa-youtube"></a>
+					 <a href="https://www.facebook.com/vtkyn/" target="_blank" class="fab fa-facebook"></a>
+					 <a href="https://www.instagram.com/chuheocon25/" class="fab fa-instagram" target="_blank"></a>
+					 <a href="https://twitter.com/?lang=vi" class="fab fa-twitter" target="_blank"></a>
+					 <a href="https://www.google.com.vn/?hl=vi" class="fab fa-google" target="_blank"></a>
+				 </div>
+			 </div>
+			 <div class="col2_menu">
+				<ul>
+					<h4>Về chúng tôi</h4>
+					<li><a href="./index.html">Giới thiệu về YUFOOD</a></li>
+					<li><a href="./nhuonquyen.html">Nhượng quyền</a></li>
+					<li><a href="#diachi">Cửa hàng</a></li>
+					<li><a href="#">Liên hệ</a></li>
+				</ul>
+			 </div>
+			 <div class="col3">
+				  <ul> <h4>Chính sách</h4>
+					 <li><a href="#">Quy trình đồ uống</a></li>
+					 <li><a href="#">Hướng dẫn thanh toán</a></li>
+					 <li><a href="#">Bảo mật thông tin</a></li>
+					 <li><a href="#">Giải quyết khiếu nại</a></li>
+				 </ul>
+			 </div>
+	   </div>
+		<div class="footer2">
+				Copyrights &copy; 2019 by YU FOOD. All rights reserved
+			</div>
+		</div>
+	</div>
+</body>
+</html>

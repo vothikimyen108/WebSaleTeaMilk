@@ -1,0 +1,213 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>YU FOOD-BLOG</title>
+<link href="css/css_4.css" rel="stylesheet">
+<link href="fontawesome-free-5.9.0-web/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Baloo&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css">
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
+<script>
+	function hien()
+	{
+		document.getElementById("myDropdown").classList.toggle("show");
+	}
+  $(document).ready(function(){
+	$("img.di").hide();
+	$(window).scroll(function(){
+		if($("html,body").scrollTop()>60)
+			$("img.di").show("fast");
+		else
+			$("img.di").hide("fast");
+	})
+	$("img.di").click(function()
+			 {
+				$("html,body").animate({scrollTop:0},200);
+			 })
+})
+</script>
+<script src="https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js"></script>
+<script>
+	new WOW().init();
+</script>
+</head>
+<body>
+	<div>
+		<div class="header">
+			<div class="header-left">
+			  <img src="anh/logo_vang.png" alt="OU" id="veday">
+			</div>
+			<div class="menu">
+				<ul class="nav-left">
+					<li><a href="./index.html">Trang chủ</a></li>
+					<li><a href="./gioithieu.html">Giới Thiệu</a></li>
+					<li class="submenu"><a href="./sanpham.html">Sản Phẩm</a>
+						<ul class="subcontent">
+						<li><a href="#">đồ ăn</a></li>
+						<li><a href="#">đồ uống</a></li>
+					 	</ul>
+					</li>
+					<li><a href="./blog.html">Blog</a></li>
+				</ul>
+				<ul class="nav-right">
+					<li>
+						<a href="#" id="search" onClick="hien()"><i class="fa fa-search"></i></a>
+					</li>
+					<li><a href="#"><i class="fa fa-cart-arrow-down"></i></a></li>
+				</ul>
+				<div id="myDropdown" class="dropdown-content"><input type="text"  placeholder="Trà sữa, pizza..."></div>
+			</div>
+		</div>
+		<div class="body">
+			<div>
+			<div class="tieude"><h1>BLog</h1></div>
+			<div class="blog wow fadeInUp" data-wow-duration="2s">
+				<div class="blog-left">
+					<iframe width="100%" height="100%" src="https://www.youtube.com/embed/EM53yrXg-Co" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<div class="blog-right">
+					<h2>pizza ở đâu ngon nhất</h2>
+					<p>Pizza là một món ăn khá phổ biến đang thu hút rất đông các thực khách ở khắp nơi trên thế giới và Việt Nam cũng là một nước chịu ảnh hưởng không nhỏ từ sức lan tỏa của món ăn này. Nhưng đứng giữa thiên đường pizza, không phải ai cũng biết ăn pizza vị nào ngon? Vậy thì mời các độc giả hãy theo dõi bài viết này để biết thêm về vấn đề pizza vị nào ngon nhé!
+ 					</p>
+					<img src="anh/32916556-hot-homemade-pepperoni-pizza-ready-to-eat.jpg" alt="anh">
+					<a href="#" title>Xem Thêm</a>
+				</div>
+			 </div>
+				<div class="blog-child">
+					<div class="child1 wow fadeInUp" data-wow-delay="2s">
+						<img src="anh/blog/banner-tra-sua-tocotoco-min.jpg" alt="anh">
+						<div class="info">
+						<h3>Trà sữa trân châu hoàng gia</h3>
+						<p>Dù "giới trà sữa" ngày càng xuất hiện nhiều đồ uống với biến tấu mới trong hương vị, nhưng trà sữa trân châu truyền thống vẫn chiếm một vị trí nhất định trong lòng...</p>
+						<div class="team"><a href="#">xem thêm</a></div>
+					    </div>
+					</div>
+					<div class="child1 wow fadeInUp" data-wow-delay="2.6s">
+						<img src="anh/blog/1-198.jpg" alt="anh">
+						<div class="info">
+						<h3>cách nấu chè đậu đỏ</h3>
+						<p>Đậu đỏ sau khi ngâm rửa lại thật sạch rồi cho vào nồi. Thêm nước cùng 1 chút xíu thuốc muối (cỡ hạt bắp) và bật bếp nấu cho đậu đỏ chín mềm...</p>
+						<div class="team"><a href="#">xem thêm</a></div>
+					    </div>
+					</div>
+					<div class="child1 wow fadeInUp" data-wow-delay="3.2s">
+						<img src="anh/blog/rain-drop-cake-2-4-20170522175723.jpg" alt="anh">
+						<div class="info">
+						<h3>khám phá ẩm thực nhật bản</h3>
+						<p>Xuất hiện từ trước công nguyên và được dùng trong các dịp lễ tế thần, theo thời gian, Wagashi đã trở nên quen thuộc và trở thành món bánh không...</p>
+						<div class="team"><a href="#">xem thêm</a></div>
+					    </div>
+					</div>
+					<div class="child1 wow fadeInUp" data-wow-delay="3.8s">
+						<img src="anh/blog/coconut-cupcakes.jpg" alt="anh">
+						<div class="info">
+						<h3>CUPCAKE DỪA MÂM XÔI</h3>
+						<p>Quả mâm xôi, hay còn gọi là quả phúc bồn tử được xem là ‘chúa tể’ của các loại quả vì nó không chỉ có giá trị dinh dưỡng tuyệt vời mà mâm xôi..</p>
+						<div class="team"><a href="#">xem thêm</a></div>
+					    </div>
+					</div>
+				</div>
+			<div class="tieude"><h1>sản phẩm sắp ra mắt </h1></div>
+			<div class="anh">
+				<div class="anh-child wow tada" data-wow-offset="200">
+					<img src="anh/blog/nghe-thuat-chup-anh-mon-an-loi-cuon-021.jpg" alt="anh" class="image">
+					<div class="middle">
+					<div class="text">Bánh Cuộn</div>
+				  </div>
+				</div>
+				<div class="anh-child wow tada" data-wow-offset="200" >
+					<img src="anh/blog/467e660ac2396b9fff0ce33fb988fc3b.png" alt="anh" class="image">
+					<div class="middle">
+					<div class="text">bành mì yu food</div>
+				  </div>
+				</div>
+				<div class="anh-child wow tada" data-wow-offset="200">
+					<img src="anh/blog/autumn_food_photography_0.jpg" alt="anh" class="image">
+					<div class="middle">
+					<div class="text">bánh cam</div>
+				  </div>
+				</div>
+				<div class="anh-child wow tada" data-wow-offset="200">
+					<img src="anh/blog/190326-spicy-salmon-bowl-horizontal-1556024100.png" alt="anh" class="image">
+					<div class="middle">
+					<div class="text">cơm cuộn</div>
+				  </div>
+				</div>
+				<div class="anh-child wow tada" data-wow-offset="250">
+					<img src="anh/blog/peach___spiced_ice_tea.jpg" alt="anh" class="image">
+					<div class="middle">
+					<div class="text">trà đào</div>
+				  </div>
+				</div>
+				<div class="anh-child wow tada" data-wow-offset="250">
+					<img src="anh/blog/photo-1536935338788-846bb9981813.jfif" alt="anh" class="image">
+					<div class="middle">
+					<div class="text">trà việt quốc</div>
+				  </div>
+				</div>
+				<div class="anh-child wow tada" data-wow-offset="250">
+					<img src="anh/blog/Nathaniel-Davies-Drinks-39-of-55_539.jpg" alt="anh" class="image">
+					<div class="middle">
+					<div class="text">juice yu food</div>
+				  </div>
+				</div>
+				<div class="anh-child wow tada" data-wow-offset="250">
+					<img src="anh/blog/Drinks-Styling-photography-glycerin-water-mix-660x880.jpg" alt="anh" class="image">
+					<div class="middle">
+					<div class="text">trà chanh</div>
+				  </div>
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="goto">
+			<div ><img src="anh/1730464-call-telephone-icon-telephone-phone-telephone-call-png-512_512.png" alt="anh"></div>
+			<div ><img src="anh/icon-mess-blue.png" alt="anh"></div>
+			<div ><img src="anh/icon-2.1.png" alt="anh"></div>
+			<div><img class="di" src="anh/scroll-up-icon-10.jpg" alt="anh"></div>
+		</div>
+		<div class="footer">
+			<div class="footer1">
+			<div class="col">
+				<img src="anh/logo_vang.png" alt="anh">
+			</div>
+ 			 <div class="col1">
+				   <ul class="anv"><h4>Công Ty YU FOOD Việt Nam</h4>
+					 <li><a href="#" class="fa fa-place-of-worship"><span>788 Nguyễn Kiệm, Phường 3, Gò vấp, TP.HCM</span></a></li>
+					 <li><a href="#" class="fa fa-phone-alt"><span>0945320117</span></a></li>
+					 <li><a href="#" class="fa fa-mail-bulk"><span>yofood&#64;gmail.com</span></a></li>
+				 </ul>
+				 <div class="anv">
+					 <a href="https://www.youtube.com/" target="_blank" class="fab fa-youtube"></a>
+					 <a href="https://www.facebook.com/vtkyn/" target="_blank" class="fab fa-facebook"></a>
+					 <a href="https://www.instagram.com/chuheocon25/" class="fab fa-instagram" target="_blank"></a>
+					 <a href="https://twitter.com/?lang=vi" class="fab fa-twitter" target="_blank"></a>
+					 <a href="https://www.google.com.vn/?hl=vi" class="fab fa-google" target="_blank"></a>
+				 </div>
+			 </div>
+			 <div class="col2_menu">
+				 <ul>
+					 <h4>Về chúng tôi</h4>
+					 <li><a href="./index.html">Giới thiệu về YUFOOD</a></li>
+					 <li><a href="./nhuonquyen.html">Nhượng quyền</a></li>
+					 <li><a href="#diachi">Cửa hàng</a></li>
+					 <li><a href="#">Liên hệ</a></li>
+				 </ul>
+			 </div>
+			 <div class="col3">
+				  <ul> <h4>Chính sách</h4>
+					 <li><a href="#">Quy trình đồ uống</a></li>
+					 <li><a href="#">Hướng dẫn thanh toán</a></li>
+					 <li><a href="#">Bảo mật thông tin</a></li>
+					 <li><a href="#">Giải quyết khiếu nại</a></li>
+				 </ul>
+			 </div>
+	   </div>
+		<div class="footer2">
+				Copyrights &copy; 2019 by YU FOOD. All rights reserved
+			</div>
+		</div>
+	</div>
+</body>
+</html>

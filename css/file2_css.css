@@ -1,0 +1,373 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	font-family: 'Baloo', cursive;
+}
+html{
+	scroll-behavior: smooth;
+}
+/*HEAD*/
+/*head*/
+div.header{
+	background-color:#282828;
+	display: flex;
+	text-align: center;
+	height: 70px;
+	position:fixed;
+	top:0;
+	left: 8px;
+	right: 8px;
+	z-index: 10;
+	margin: 0;
+} 
+div.header-left >img{
+ 	width: 50%;
+}
+div.header-left 
+{
+ 	width: 20%;
+	margin:0;
+}
+div.menu
+{
+	width: 80%;
+}
+div.menu >ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	display:flex;
+}
+ul.nav-right{
+  float: right;
+}
+ul.nav-left{
+    float: left;
+}
+.dropdown-content
+{
+	position:absolute;
+	margin-top:70px;
+	right: 8%; 
+	padding:0;
+	width: 20%;
+	display: none;
+}
+input
+{
+	width: 100%;
+	height: 36px;
+	border-radius: 30px;
+	border: 1px solid transparent;;
+	outline: 0;
+	padding: 5px 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.show {
+	display: block;
+}
+.menu > ul > li >a{
+	display: block;
+	text-decoration:none;
+	color:#FFF;
+	font-size: 17px;
+	padding:25px 25px;
+	text-transform: uppercase;
+}
+div.menu >ul >li >a:hover
+{
+	border-bottom: 1px solid #FFF;
+	transition: .5s ease;
+	padding-bottom: 5px;
+}
+.subcontent {
+	display:none;
+	position:absolute;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	width: 140px;
+}
+.subcontent > li
+{
+	background-color:rgba(0,0,0,0.36);
+	color: #FFF;
+	border-bottom:1px solid #FFF;
+	padding: 10px;
+ }
+.subcontent >li >a
+{
+	text-decoration: none;
+	color: #FFF;
+}
+.submenu:hover .subcontent {
+	display:block;
+}
+/*SAN PHAM*/
+.tbody
+{
+	width: 100%;
+	height: 5800px;
+	overflow: hidden;
+	position: relative;
+}
+.danhmuc > div{
+	margin: 0 auto;
+	margin-bottom: 10px;
+	width: 80%;
+	text-align:left;
+}
+.sanpham{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 20px;
+}
+.sanpham > div{
+	width: 23%;
+	border-radius: 5px;
+	border: 1px solid #EFE6E6;
+	border-bottom: outset 0.4px;
+	background-color: #FFFFFF;
+	height: 370px;
+	position: relative;
+	overflow: hidden;
+}
+div.sanpham > div > img{
+	width: 100%;
+	height: 63%;
+	padding: 0;
+	text-align: center;
+}
+.list{
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+.list:hover img{
+	transform: scale(1.15);
+	transition: 1s;
+}
+.money{
+	color:#B06365;
+}
+.text.money{
+	text-align: center;
+}
+.info > div{
+	width: 100%;
+	padding: 6px 0;
+}
+.info{
+	width: 100%;
+	position: absolute;
+	height: auto;
+	background-color: #F9F9F9;
+	margin-top: 14%;
+	padding: 0;
+	text-align: center;
+}
+.sanpham > div:hover{
+	box-shadow: rgba(0,0,0,0.3) 0px 0px 4px inset;
+}
+.sanpham > div:hover .img{
+	transform: scale(1.15);
+	transition: 1s;
+}
+.sanpham > div:hover .info{
+	margin-top: auto;
+	height: 200px;
+	transition: 1s;
+}
+.team > a{
+	border: 1px solid #d3b673;
+	text-decoration: none;
+	color: #FFF;
+	text-align: center;
+	margin: 8px;
+	padding: 5px;
+	background: #d3b673;
+	font-size: 14px;
+}
+.team > a:hover{
+	border: 1px solid rgba(0,0,0,0.8);
+	background: rgba(0,0,0,0.8);
+}
+h2{
+	width: 100%;
+	margin: 0;
+	padding: 0px 0px 20px 0px;
+	font-size: 30px;
+	text-transform: uppercase;
+}
+/*MENU DOC*/
+#body{
+	box-sizing: border-box;
+    float: left;
+	margin-top: 90px;
+	position: fixed;
+}
+h3{
+	font-size: 30px;
+	color: #B06365;
+}
+.li{
+	list-style-type: none;
+	width: 30%;
+	padding: 0 0 0 30px;
+	margin-top: 30px;
+	margin-left: 70px;
+}
+.li > li{
+	width: 30%;
+}
+.li > li > a{
+	text-decoration: none;
+	width: 115px;
+	font-size: 18px;
+	display: block;
+	padding: 8px 0px;
+	text-align: left;
+	color: #000;
+}
+.li > li > a:hover{
+	text-decoration: underline;
+}
+.danhmuc
+{
+	margin-top: 100px;
+}
+/*phanchan*/
+div.footer
+{
+	margin: 0;
+	text-align: center;
+	background-color:#282828;
+	bottom:0;
+	left:0;
+	right:0;
+	width: 100%;
+	color: #FFF;
+	position:relative;
+}
+div.footer1
+{
+    overflow: hidden;
+	width: 100%;
+	border-bottom: 1px solid rgba(246,246,246,0.73);
+	display: flex;
+}
+div.footer1 > div >ul
+{
+	list-style-type: none;
+	width: 80%;
+	padding: 0;
+	margin: 0 auto;
+}
+div.footer1 > div >ul >li >a
+{
+	text-decoration: none;
+	margin: 10px 0px;
+	color:#FFF;
+	display: block;
+	text-align: left;
+}
+.anv a
+{
+	
+	color: #E6EA25 !important;
+}
+div.anv{
+	width: 80%;
+	margin: 0 auto;
+	text-align: left;
+}
+div.anv >a
+{
+	padding-right:20px;
+	width: 10%;
+}
+span
+{
+   text-transform:none;
+	font-weight:normal;
+	margin-left: 10px;
+	color: #FFF;
+}
+h4
+{
+	text-align: left;
+	color:#E6EA25;
+}
+.col
+{
+	width:30%;
+}
+.col >img
+{
+	width: 100%;
+}
+.col1
+{
+	width:  30%;
+}
+.col2_menu
+{
+	width:  20%;
+}
+.col3
+{
+	width:  20%;
+	
+}
+/*go*/
+.goto div
+{
+	width: 100%;
+	height: 20%;
+	padding: 3px;
+	margin: 0;
+	animation: xoay 0.5s ease-out infinite;
+}
+.goto
+{
+	bottom: 0; 
+	right: 10px; 
+	cursor: pointer;  
+	position: fixed;
+	width: 3%;
+	z-index: 10;
+}
+.goto  div img
+{
+	width: 100%;
+	border-radius:90%;
+	border-bottom-right-radius: 5%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.header ,.footer
+{
+	font-family:Muli, sans-serif;
+}
+@keyframes xoay
+{
+	from{ transform: rotatey(18deg)}
+	to{transform: rotatey(-18deg)}
+}
+img.go
+{
+	display: block;
+}
+/*PHAN BO*/
+@media only screen and (min-width: 769px){
+	div.li{
+		width: 30%;
+	}
+}
+@media only screen and (min-width: 769px){
+	div.sanpham{
+		width: 70%;
+		float: right;
+		margin-top: 40px;
+	}
+}

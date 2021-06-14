@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Giới thiệu - YU Food</title>
+	<link href="css/file1_css.css" rel="stylesheet"/>
+	<link href="fontawesome-free-5.9.0-web/css/all.min.css" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com/css?family=Baloo&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css">
+	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
+	<script>
+		function hien()
+		{
+			document.getElementById("myDropdown").classList.toggle("show");
+		}
+		function timkiem(obj){
+			var t=obj.value;
+			var food=document.querySelectorAll("div.sanpham");
+			for(var i=0;i<food.length;i++)
+				food[i].style.border="";
+			for(var i=0;i<food.length;i++){
+				var h3=food[i].getElementsByTagName("h3")[0].innerText;
+				if(h3.toLowerCase().indexOf(t)>=0)
+					couurses[i].show();
+			}
+		}
+	  $(document).ready(function(){
+        $("img.di").hide();
+		$(window).scroll(function(){
+			if($("html,body").scrollTop()>60)
+				$("img.di").show("fast");
+			else
+				$("img.di").hide("fast");
+		})
+		$("img.di").click(function()
+				 {
+					$("html,body").animate({scrollTop:0},200);
+				 })
+	})
+	</script>
+	<script src="https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js"></script>
+	<script>
+   		new WOW().init();
+	</script>
+</head>
+
+<body>
+	<div>
+		<div class="header">
+			<div class="header-left">
+			  <img src="anh/logo_vang.png" alt="OU" id="veday">
+			</div>
+			<div class="menu">
+				<ul class="nav-left">
+					<li><a href="./index.html">Trang chủ</a></li>
+					<li><a href="./gioithieu.html">Giới Thiệu</a></li>
+					<li class="submenu"><a href="./sanpham.html">Sản Phẩm</a>
+						<ul class="subcontent">
+						<li><a href="#">đồ ăn</a></li>
+						<li><a href="#">đồ uống</a></li>
+					 	</ul>
+					</li>
+					<li><a href="./blog.html">Blog</a></li>
+				</ul>
+				<ul class="nav-right">
+					<li>
+						<a href="#" id="search" onClick="hien()"><i class="fa fa-search"></i></a>
+					</li>
+					<li><a href="#"><i class="fa fa-cart-arrow-down"></i></a></li>
+				</ul>
+				<div id="myDropdown" class="dropdown-content"><input type="text"  placeholder="Trà sữa, pizza..."></div>
+			</div>
+		</div>
+		<div id="body">
+			<h1>GIỚI THIỆU</h1>
+			<div class="body">
+				<p class="body wow fadeInDown" data-wow-delay="0.5s">Luôn tâm huyết với việc khai thác nguồn nông sản Việt Nam để tạo ra những loại thức ăn ngon, an toàn và giàu giá trị dinh dưỡng, YU Food mở cửa hàng đầu tiên vào năm 2013, mang trong mình lòng đam mê và khát vọng xây dựng một thương hiệu fast food đa dạng vừa mang hương vị của nhiều quốc gia. YU Food tin rằng thưởng thức một ly trà sữa được pha chế từ trà Mộc Châu, trân châu từ sắn dây Nghệ An hay những chiếc bánh ngọt xinh xắn, thơm ngon sẽ là những trải nghiệm hoàn toàn khác biệt và tuyệt vời nhất cho những khách hàng của mình.</p>
+				<p class="body wow fadeInDown" data-wow-delay="0.5s">Cũng chính từ sự khác biệt đó, thương hiệu YU Food đã có những bước phát triển thần tốc và dần chiếm lĩnh thị trường fast food với hơn 200 cửa hàng trải dài trên toàn quốc. Cột mốc năm 2018 đánh dấu ước mơ vươn xa biển lớn của thương hiệu khi YU Food chính thức đặt chân lên nước Mỹ và tiếp nối thành công tại Úc, Nhật Bản, Hàn Quốc, Singapore,…</p>
+				<p class="body wow fadeInDown" data-wow-delay="0.5s">Hành trình đầy đam mê và tâm huyết này sẽ tiếp tục nhân rộng để lan tỏa những nguồn nông sản Việt đến mọi miền trên Việt Nam và thế giới.</p>
+				<div id="anh" align="center">
+					<p class="wow pulse" data-wow-offset="100"><img src="ảnh/Poster/anh1.jpg" alt="1"/></p>
+					<p class="wow pulse" data-wow-offset="130"><img src="ảnh/Poster/anh2.jpg" alt="2"/></p>
+					<p class="wow pulse" data-wow-offset="160"><img src="ảnh/Poster/anh3.jpg" alt="3"/></p>
+				</div>
+			</div>
+		</div>
+		<div class="goto">
+			<div ><img src="anh/1730464-call-telephone-icon-telephone-phone-telephone-call-png-512_512.png" alt="anh"></div>
+			<div ><img src="anh/icon-mess-blue.png" alt="anh"></div>
+			<div ><img src="anh/icon-2.1.png" alt="anh"></div>
+			<div><img class="di" src="anh/scroll-up-icon-10.jpg" alt="anh"></div>
+		</div>
+		<div class="footer">
+		<div class="footer1">
+			<div class="col">
+				<img src="anh/logo_vang.png" alt="anh">
+			</div>
+ 			 <div class="col1">
+				   <ul class="anv"><h4>Công Ty YU FOOD Việt Nam</h4>
+					 <li><a href="#" class="fa fa-place-of-worship"><span>788 Nguyễn Kiệm, Phường 3, Gò vấp, TP.HCM</span></a></li>
+					 <li><a href="#" class="fa fa-phone-alt"><span>0945320117</span></a></li>
+					 <li><a href="#" class="fa fa-mail-bulk"><span>yofood&#64;gmail.com</span></a></li>
+				 </ul>
+				 <div class="anv">
+					 <a href="https://www.youtube.com/" target="_blank" class="fab fa-youtube"></a>
+					 <a href="https://www.facebook.com/vtkyn/" target="_blank" class="fab fa-facebook"></a>
+					 <a href="https://www.instagram.com/chuheocon25/" class="fab fa-instagram" target="_blank"></a>
+					 <a href="https://twitter.com/?lang=vi" class="fab fa-twitter" target="_blank"></a>
+					 <a href="https://www.google.com.vn/?hl=vi" class="fab fa-google" target="_blank"></a>
+				 </div>
+			 </div>
+			 <div class="col2_menu">
+				<ul>
+					<h4>Về chúng tôi</h4>
+					<li><a href="./index.html">Giới thiệu về YUFOOD</a></li>
+					<li><a href="./nhuonquyen.html">Nhượng quyền</a></li>
+					<li><a href="#diachi">Cửa hàng</a></li>
+					<li><a href="#">Liên hệ</a></li>
+				</ul>
+			 </div>
+			 <div class="col3">
+				  <ul> <h4>Chính sách</h4>
+					 <li><a href="#">Quy trình đồ uống</a></li>
+					 <li><a href="#">Hướng dẫn thanh toán</a></li>
+					 <li><a href="#">Bảo mật thông tin</a></li>
+					 <li><a href="#">Giải quyết khiếu nại</a></li>
+				 </ul>
+			 </div>
+	   </div>
+		<div class="footer2">
+				Copyrights &copy; 2019 by YU FOOD. All rights reserved
+			</div>
+		</div>
+	</div>
+</body>
+</html>
